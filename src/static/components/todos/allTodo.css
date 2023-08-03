@@ -1,0 +1,91 @@
+
+.allTodo ul{
+    padding: 0;
+    border: 1px solid rgb(179, 198, 210);
+}
+
+.allTodo ul li {
+    border-bottom: 1px dotted rgb(44, 128, 185);;    background-color: white;
+    font-size: 15px;
+    padding: 0 5px;
+}
+
+.allTodo ul li:last-child {
+    border: none;
+}
+
+.allTodo ul li {
+    list-style: none;
+
+}
+
+.todo {
+    padding: 0px;
+    display: flex;
+    /* justify-content: space-between; */
+    align-items: center;
+}
+
+.todo_detail {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    float: left; 
+    width: 50%;
+}
+.todo_detail:hover {
+    cursor: pointer;
+}
+.todo_content {
+    width: 70%;
+    white-space: nowrap;
+    overflow: hidden !important;
+    text-overflow: ellipsis;
+}
+.todo_status div {
+    padding: 0 4px;
+}
+
+.todo_status { 
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    float: right;
+    width: 50%
+}
+
+.completed_status {
+    background-color:greenyellow;
+    border: none;
+    border-radius: 5px;
+    color: rgb(0, 0, 0);
+    padding: 5px 10px;
+}
+
+.not_done {
+    background-color:rgb(199, 204, 207);
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    color: rgb(0, 0, 0);
+}
+
+.delete_status {
+    background-color:rgb(233, 134, 134);
+    border: none;
+    border-radius: 5px;
+    color: rgb(0, 0, 0);
+    padding: 5px 10px;
+}
+ 
+.delete_status:hover {
+    background-color: rgb(255, 4, 4)
+}
+
+.completed_status:hover {
+    background-color:rgb(159, 165, 149);
+}
+
+.not_done:hover {
+    background-color:rgb(144, 152, 159)
+}

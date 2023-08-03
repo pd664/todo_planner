@@ -1,0 +1,132 @@
+.signIn {
+    position: relative;
+}
+
+.background {
+    /* position: absolute; */
+  /* top: 0;
+  left: 0; */
+}
+
+.signin_container {
+    position: absolute;
+    top: 0;
+    /* left: 10%; */
+}
+
+.signin_data {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: right; */
+    padding: 50px 0;
+    margin: auto;
+    margin-right: auto;
+}
+
+.signinLogo {
+    color: #3399ff
+}
+
+.signin_logo {
+    display: inline-flex;
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Chatbot_logo {
+    margin: 0;
+    font-weight: bold;
+}
+
+.signin_msg {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.signin_form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.signin_form input {
+    line-height:5vh;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: 1px solid #ccd4db;
+    width: 50vh;
+}
+
+.signin_input:focus {
+    border : 1px solid #3399ff
+}
+
+.signin_submit {
+    width : 100%;
+    color : white;
+    background-color: #3399ff;
+    border-radius: 5px;
+}
+
+.signin_or {
+    display : flex;
+    flex-direction: row;
+    /* width : 100%; */
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 50px 0 50px;
+}
+
+.signin_or_line {
+    border: 1px solid #d1c6c6;
+    width : 100%;
+    height: 1px
+}
+
+.btn_google {
+    padding: 20px
+}
+
+.button_google {
+    background-color: white;
+    border: 1px solid #3399ff;
+    line-height:5vh;
+    width : 100%;
+    text-align : center;
+}
+
+.button_google:hover {
+    border: 2px solid #3399ff
+}
+
+.google_logo {
+    color: red;
+    padding: 5px;
+}
+
+.signin_or_btns {
+    padding: auto;
+    margin: auto;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 50px 0 50px;
+}
+
+@media only screen and (min-width: 600px) {
+    .signin_data {
+        padding: 50px 50px;
+    }
+    
+    .signin_container {
+        position: absolute;
+        top: 0;
+        left: 10%;
+    }
+}

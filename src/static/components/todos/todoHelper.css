@@ -1,0 +1,94 @@
+.todohelper_cont {
+    display: flex;
+    flex-direction: row;
+    height: 300px;
+    /* width: 800px; */
+}
+
+.todohelper_left {
+    width: 50%;
+    padding: 10px;
+}
+
+.todohelper_right {
+    width: 50%;
+    padding:10px;
+    
+}
+
+.todo_notes {
+    height: 190px;
+    width: 100%;
+    border: 1px solid rgb(44, 128, 185);
+    /* object-fit:contain; */
+}
+
+.due_date {
+    /* width: 560px; */
+    /* background-color: black; */
+}
+
+.due_date_btn {
+    /* width: 100%; */
+    padding:0 7.8% 
+}
+
+.priority {
+    padding: 50px 0;
+    
+}
+
+.prior {
+    width: 100% !important;
+    height: 30px !important;
+    border: 1px solid rgb(44, 128, 185);
+    color: white;
+    background-color:rgb(44, 128, 185)
+}
+
+.todohelper_delete {
+    background-color: rgb(215, 23, 23);
+    border: none;
+    color: white;
+    padding: 10px;
+}
+
+.todohelper_save {
+    background-color: green;
+    border: none;
+    color: white;
+    padding: 10px;
+}
+
+.todohelper_btns {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+.due_date_btn {
+    background-color: white;
+    border: 1px solid rgb(44, 128, 185);
+}
+
+.low {
+    background-color: green;
+}
+
+.medium {
+    background-color: rgb(197, 197, 52);
+}
+
+.high {
+    background-color: red;
+}
+
+.today {
+    background-color: red
+}
+
+.tomorrow {
+    background-color: red
+}

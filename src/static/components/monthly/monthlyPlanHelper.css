@@ -1,0 +1,115 @@
+#mph_cont{
+  border: 1px solid rgb(44,128,185);
+  padding: .5rem;
+  display: flex;
+  flex-wrap: wrap;
+  width: 70%;
+  flex-direction: row;
+}
+  
+#days_name {
+  border-bottom: 1px solid rgb(179, 198, 210);
+  
+  padding: .5rem;
+  display: flex;
+  flex-wrap: wrap;
+  width: 819px !important;
+  /* justify-content: space-between */
+}
+
+.item, .dayname {
+  /* flex: 1 0 12%; */
+  border: 1px solid rgb(179, 198, 210);
+  /* height: 3rem; */
+  /* width: 2.8rem; */
+  margin-bottom: .3rem;
+  margin-right: .3rem;
+  /* flex-grow: 4; */
+  /* order: 5; */
+  flex-basis: 12.5%;
+  /* padding: 1px 1px 0 0 */
+}
+
+.monthlyPlanHelper {
+  /* padding-right: 15px;
+  padding-left: 15px; */
+  margin-right: auto;
+  margin-left: auto;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  position: relative;
+}
+
+@media (min-width: 1200px) {
+  .monthlyPlanHelper {
+    width: 1170px;
+  }
+}
+
+#dat {
+  /* background-color: rgb(222, 176, 176); */
+  color: rgb(79, 67, 8);
+  width: 15%;
+}
+
+.dayname {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+}
+
+.notes {
+  padding: 10px;
+  width: 20%;
+  /* text-align: center; */
+}
+
+.todo_input {
+  display: flex;
+  flex: column;
+  /* padding: 10px */
+  border: 1px solid black;
+  /* width: 100px; */
+}
+
+/* .date_today {
+  border: 2px solid red; 
+  background-color: rgb(44,128,185);
+}
+
+.date_today > div {
+  color: white !important;
+  font-size: bold;
+} */
+
+
+.todo_note {
+  position: absolute;
+  top: 10px;
+  right: 3%;
+}
+
+.unclickable > #dat {
+  display: inline-block;
+  pointer-events: none;
+  color: rgb(118, 116, 116);
+}
+
+.dates {
+  display: flex;
+  flex-direction: row;
+  flex-grow: 7;
+  flex-wrap: wrap;
+  justify-content: start;
+    margin-top: 10px;
+  align-content: center;
+  padding: 10px
+}
+
+.item {
+  /* width: 110px !important; */
+  height:60px !important; 
+  /* flex: 1 1 13%; */
+}

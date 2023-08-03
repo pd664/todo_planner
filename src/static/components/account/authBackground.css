@@ -1,0 +1,104 @@
+.ripple-background {
+  background: #3399ff;
+  height: 100vh;
+}
+
+.auth_background {
+  overflow-y: hidden;
+  overflow-x: hidden;
+  position: relative;
+  padding: 0;
+  margin: 0;
+}
+
+.circle{
+  position: absolute;
+  border-radius: 50%;
+  background: white;
+  /* animation: ripple 15s infinite; */
+  box-shadow: 0px 0px 1px 0px black;
+}
+
+.circle_full {
+  position: absolute;
+  border-radius: 50%;
+  background: white;
+  animation: ripple 15s forwards;
+  box-shadow: 0px 0px 1px 0px black;
+  animation-iteration-count: 1
+}
+
+.small{
+  width: 20vh;
+  height: 20vh;
+  left: -100px;
+  bottom: -100px;
+}
+
+.smallright {
+  width: 20vh;
+  height: 20vh;
+  right: -100px;
+  top: -100px;
+}
+
+.medium{
+  width: 40vh;
+  height: 40vh;
+  left: -200px;
+  bottom: -200px
+}
+
+.large{
+  width: 60vh;
+  height: 60vh;
+  left: -300px;
+  bottom: -300px;
+}
+
+.xlarge{
+  width: 80vh;
+  height: 80vh;
+  left: -400px;
+  bottom: -400px;
+}
+
+.xxlarge{
+  width: 100vh;
+  height: 100vh;
+  left: -500px;
+  bottom: -500px;
+}
+
+.shade1{
+  opacity: 0.2;
+}
+.shade2{
+  opacity: 0.4;
+}
+
+.shade3{
+  opacity: 0.4;
+}
+
+.shade4{
+  opacity: 0.8;
+}
+
+.shade5 .shade6{
+  opacity: 1.0;
+}
+
+@keyframes ripple{
+  0%{
+    transform: scale(0.8);
+  }
+  
+  /* 50%{
+    transform: scale(1.2);
+  } */
+  
+  100%{
+    transform: scale(20);
+  }
+}

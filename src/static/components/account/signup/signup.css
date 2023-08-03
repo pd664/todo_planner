@@ -1,0 +1,123 @@
+.signUp {
+    position: relative;
+}
+
+
+.signup_container {
+    position: absolute;
+    top: 0;
+    /* left: 10%; */
+}
+
+.signup_data {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: right;
+    padding: 50px 0;
+}
+
+.signupLogo {
+    color: #3399ff
+}
+
+.signup_logo {
+    display: inline-flex;
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Chatbot_logo {
+    margin: 0;
+    font-weight: bold;
+} 
+
+.signup_msg {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.signup_form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.signup_form input {
+    line-height:5vh;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: 1px solid #ccd4db;
+    width: 50vh;
+}
+
+.signup_input:focus {
+    border : 1px solid #3399ff
+}
+
+.signup_submit {
+    width : 100%;
+    color : white;
+    background-color: #3399ff;
+    border-radius: 5px;
+}
+
+.error {
+    color: red;
+    text-align: center;
+}
+
+.signup_or {
+    display : flex;
+    flex-direction: row;
+    width : 100%;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 50px 0 50px;
+}
+
+.signup_or_line {
+    border: 1px solid #d1c6c6;
+    width : 100%;
+    height: 1px
+}
+
+.btn_googles {
+    padding: 20px;
+}
+
+.button_googles {
+    background-color: white;
+    border: 1px solid #3399ff;
+    line-height:5vh;
+    width : 100%;
+    text-align : center;
+    padding: 0 20vh;
+}
+
+.button_googles:hover {
+    border: 2px solid #3399ff
+}
+
+.google_logos {
+    color: red;
+    padding: 5px;
+}
+
+@media only screen and (min-width: 600px) {
+    .signup_data {
+        padding: 50px 50px;
+    }
+    
+    .signup_container {
+        position: absolute;
+        top: 0;
+        left: 10%;
+    }
+}

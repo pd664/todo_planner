@@ -1,0 +1,64 @@
+.home {
+  height: 100px;
+}
+.home_btns {
+    background-color: rgb(0, 0, 0);
+    /* width: 100%; */
+    text-align: center;
+}
+
+#menu{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#menu button {
+    border: none;
+    font-size: 25px;
+    background-color: transparent;
+    font-weight: bold;
+    color:rgb(179, 198, 210);
+    /* color:rgb(0,0,0) */
+}
+
+.activeNew {
+    color: red !important;
+}
+
+.page{display: none;}
+.page.active {display: block;}
+
+.div_screen_contents_frame {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+@media (min-width: 768px) {
+    .div_screen_contents_frame {
+      width: 750px;
+  }
+}
+@media (min-width: 992px) {
+  .div_screen_contents_frame {
+    width: 970px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .div_screen_contents_frame {
+    width: 1170px;
+  }
+}
+
+.home_account {
+  color:rgb(179, 198, 210);
+  font-size: 30px;
+}
+
+.home_logo {
+  font-size: 45px;
+  color:rgb(179, 198, 210);
+}
