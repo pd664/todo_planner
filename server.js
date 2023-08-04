@@ -12,7 +12,7 @@ const AddTodoSchema = require('./schema/addTodoSchema');
 const emailValidator = require("deep-email-validator");
 const MonthlyPlanSchema = require('./schema/addMonthlyPlanSchema');
 const { Console } = require('console');
-const PORT = 4000
+const PORT = process.env.PORT || 4000
 const http = require('http').Server(app);
 app.use(cors());
 
@@ -375,6 +375,11 @@ app.post('/completeMp', (req, res) => {
     res.send("there are some error. please try again later")})
     return
 })
+
+if(process.env.NODE_ENV === 'production') {
+  app.use(express.static('plannerapp/build'))
+}
+
 
 http.listen(PORT, () => console.log(`app is listening on http://localhost:${PORT}`))
 

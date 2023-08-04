@@ -36,7 +36,7 @@ function AddMonthlyTodo(props) {
   
   async function newTodo() {
     var mpTodoId = "mpId" + Math.random().toString(16).slice(2)
-    await axios.post('http://localhost:4000/addMPNewTodo', {
+    await axios.post('/addMPNewTodo', {
       mpId : id,
       mpTodoId: mpTodoId,
       mpTodoDate: todoDate,
@@ -83,7 +83,7 @@ function AddMonthlyTodo(props) {
 
   function deleteMPTodo(mpTodoId) {
     console.log("called deleteMPTodo")
-    axios.post('http://localhost:4000/deleteMPTodo', {
+    axios.post('/deleteMPTodo', {
       mpId: id,
       mpTodoId: mpTodoId,
       date : todoDate.toString()
@@ -104,7 +104,7 @@ function AddMonthlyTodo(props) {
   async function completeMPTodo(mpTodoId, status) {
     let newStatus = status == 'Not Done' ? 'completed' :  'Not Done'
     console.log("called completeMPTodo")
-    await axios.post('http://localhost:4000/statusMPTodo', {
+    await axios.post('/statusMPTodo', {
       mpId: id,
       mpTodoId: mpTodoId,
       date : todoDate.toString()

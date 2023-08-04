@@ -25,7 +25,7 @@ function SignUp() {
     setLoading(true);
     console.log("clicked")
     axios
-      .post("http://localhost:4000/signup", {
+      .post("/signup", {
         name: name,
         username: username,
         email: email,

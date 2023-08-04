@@ -17,7 +17,7 @@ function Home() {
     var id = "id" + Math.random().toString(16).slice(2)
 
     if(getToken() !== null) {
-      await axios.post('http://localhost:4000/addTodo', {
+      await axios.post('/addTodo', {
       todoName: todoName,
       userId: getUser().userId,
       todoId: id,

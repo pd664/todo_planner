@@ -18,7 +18,7 @@ function Home() {
 
   useEffect(() => {
     // console.log(userId)
-    userId && axios.post('http://localhost:4000/allTodos', {
+    userId && axios.post('/allTodos', {
       userId: userId.userId
     })
     .then((res) => {
@@ -30,7 +30,7 @@ function Home() {
 
   useEffect(  () => {
     (async () => {
-      userId && axios.post('http://localhost:4000/allMonthlyPlans', {
+      userId && axios.post('/allMonthlyPlans', {
         userId: userId.userId
       })
       .then( async (res) => {

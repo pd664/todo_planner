@@ -20,7 +20,7 @@ function SignIn() {
         e.preventDefault();
         setLoading(true);
         await axios
-        .post("http://localhost:4000/signin", {
+        .post("/signin", {
             username: username,
             password: password,
         })

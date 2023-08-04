@@ -19,7 +19,7 @@ function AddMonthly() {
     function handleSubmit(e) {
         e.preventDefault()
         var id = "id" + Math.random().toString(16).slice(2)
-        axios.post('http://localhost:4000/addMonthlyPlan', {
+        axios.post('/addMonthlyPlan', {
             monthlyPlanName: mPName,
             monthlyPlanDate: mpDate,
             monthlyPlanId: id,

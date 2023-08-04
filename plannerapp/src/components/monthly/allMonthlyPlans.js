@@ -16,7 +16,7 @@ function AllMonthlyPlans() {
   const handleDone = (id, status) => {
     let newStatus = status === 'COMPLETED' ? "NOT DONE" : "COMPLETED"
 console.log("newStatus", newStatus)
-    axios.post('http://localhost:4000/completeMp', {
+    axios.post('/completeMp', {
       mpId: id,
       mpstatus: newStatus,
     })
@@ -25,7 +25,7 @@ console.log("newStatus", newStatus)
   }
 
   const handleDelete = (id) => {
-      axios.post('http://localhost:4000/deleteMp', {
+      axios.post('/deleteMp', {
         mpId: id
       })
       .then((data) => dispatch(deleteMonthlyPlan(id)))

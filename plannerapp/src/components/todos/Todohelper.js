@@ -12,7 +12,7 @@ function Todohelper(props) {
   const [urgency, setUrgency] = useState(urgent)
 
   const saveTodo = async () => {
-    await axios.post('http://localhost:4000/updateTodoInfo', {
+    await axios.post('/updateTodoInfo', {
       userId: getUser().userId,
       todoId: todoId,
       todoNotes : notes,

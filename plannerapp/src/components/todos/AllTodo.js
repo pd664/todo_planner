@@ -23,7 +23,7 @@ function AllTodo() {
     let newStatus = status === 'COMPLETED' ? "NOT DONE" : "COMPLETED"
     console.log("newStatus", newStatus)
     // console.log("id", id)
-      axios.post('http://localhost:4000/complete', {
+      axios.post('/complete', {
         postId: id,
         userId: userId.userId,
         status: newStatus
@@ -39,7 +39,7 @@ function AllTodo() {
   }
 
   const handleDelete = (id) => {
-      axios.post('http://localhost:4000/delete', {
+      axios.post('/delete', {
         postId: id
       })
       .then((res) => {
