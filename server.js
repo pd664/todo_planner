@@ -1,6 +1,6 @@
 const express = require('express');
 const app = express();
-const cors = require('cors');
+// const cors = require('cors');
 const mongoose = require("mongoose");
 const bodyParser = require('body-parser');
 var bcrypt = require('bcryptjs');
@@ -11,10 +11,9 @@ const SignUpSchema = require("./schema/credentilasSchema");
 const AddTodoSchema = require('./schema/addTodoSchema');
 const emailValidator = require("deep-email-validator");
 const MonthlyPlanSchema = require('./schema/addMonthlyPlanSchema');
-const { Console } = require('console');
 const PORT = process.env.PORT || 4000
 const http = require('http').Server(app);
-app.use(cors());
+// app.use(cors());
 
 app.use(bodyParser.json({ limit: "50mb" }));
 app.use(bodyParser.urlencoded({ limit: "50mb", extended: true }));
